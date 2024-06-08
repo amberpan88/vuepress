@@ -1,8 +1,8 @@
 const path = require("path")
 
 module.exports = {
-  title: "Vuepress Theme Book",
-  description: "A simple demo of the vuepress-theme-book",
+  title: "Knowledge Base",
+  description: "一个实用的知识库",
   theme: "vuepress-theme-book",
   themeConfig: {
     logo: "/logo.png",
@@ -10,19 +10,15 @@ module.exports = {
     lastUpdated: "Last Updated",
     docsRepo: "cyrilf/vuepress-theme-book/tree/master/packages/demo",
     docsDir: "docs",
-    editLinks: true,
+    editLinks: false,
     editLinkText: "Edit this page on Github",
     nav: [
       { text: "Home", link: "/" },
       {
         text: "Github",
         link:
-          "https://github.com/cyrilf/vuepress-theme-book/tree/master/packages/vuepress-theme-book"
+          "https://github.com/amberpan88/vuepress"
       },
-      {
-        text: "Default Theme Config",
-        link: "https://vuepress.vuejs.org/theme/default-theme-config.html"
-      }
     ],
     sidebar: {
       "/": [
@@ -34,7 +30,7 @@ module.exports = {
         },
         {
           title: "",
-          collapsable: false,
+          collapsable: true,
           sidebarDepth: 0,
           children: [["/theme-configuration", "Configuration 🔧"]]
         },
